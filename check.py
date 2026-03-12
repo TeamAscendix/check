@@ -5,10 +5,9 @@ app = FastAPI()
 
 # simple status variable
 status_code = 00
-
 @app.get("/")
 def root():
-    return {"statusCode": status_code}
+    return {"api": "running"}
 
 @app.get("/status")
 def get_status():
