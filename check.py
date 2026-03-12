@@ -7,7 +7,7 @@ app = FastAPI()
 status_code = 0
 @app.get("/")
 def root():
-    return {"api": "running"}
+    return {"code": status_code}
 
 @app.get("/status")
 def get_status():
