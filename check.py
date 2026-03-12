@@ -8,7 +8,7 @@ status_code = "00"
 
 @app.get("/")
 def root():
-    return {"api": "running"}
+    return {"statusCode": status_code}
 
 @app.get("/status")
 def get_status():
