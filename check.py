@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 # simple status variable
-status_code = 0
+status_code = 1
 @app.get("/")
 def root():
     return {"code": status_code}
